@@ -21,10 +21,3 @@ clock = pygame.time.Clock()
 segment_size = 20
 font_size = 30
 
-def display_message(message):
-    font = pygame.font.Font("freesansbold.ttf", font_size)
-    text_surface = font.render(message, True, white)
-    text_rect = text_surface.get_rect()
-    text_rect.center = (width / 2, height / 2)
-    window.blit(text_surface, text_rect)
-    pygame.display.flip()
