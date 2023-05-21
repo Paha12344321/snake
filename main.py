@@ -21,3 +21,4 @@ clock = pygame.time.Clock()
 segment_size = 20
 font_size = 30
 
+
