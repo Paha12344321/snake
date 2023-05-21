@@ -16,9 +16,4 @@ height = 480
 window = pygame.display.set_mode((width, height))
 pygame.display.set_caption(title)
 
-clock = pygame.time.Clock()
-
-segment_size = 20
-font_size = 30
-
 
