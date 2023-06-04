@@ -1,5 +1,10 @@
 import pygame
 import random
+from pygame import mixer
+
+mixer.init()
+mixer.music.load("bgmusic.mp3")
+mixer.music.play()
 
 pygame.init()
 
@@ -58,6 +63,9 @@ def game_loop():
                         game_over = False
                     if event.key == pygame.K_c:
                         game_loop()
+            mixer.music.stop()
+
+
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -107,3 +115,4 @@ def game_loop():
     pygame.quit()
 
 game_loop()
+
